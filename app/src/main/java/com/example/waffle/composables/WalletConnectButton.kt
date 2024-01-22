@@ -42,7 +42,6 @@ fun WalletConnectButton(
                 viewState.userAddress.isNotEmpty() -> pubKey.take(4).plus("...").plus(pubKey.takeLast(4))
                 else -> ""
             }
-
             Text(
                 modifier = Modifier.padding(start = 8.dp),
                 text = buttonText,
